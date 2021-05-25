@@ -4,11 +4,26 @@
   "description": "An example of running a Gun server (superpeer) and connecting a client (peer) to it.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "Levi Roberts",
   "license": "MIT",
   "dependencies": {
-    "gun": "^0.9.9999991"
+    "gun": "*"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier-standard": "^4.0.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "prettier": "2.3.0",
+    "prettier-config-standard": "^4.0.0"
   }
 }

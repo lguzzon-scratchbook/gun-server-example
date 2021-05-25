@@ -1,0 +1,165 @@
+dependencies:
+  gun: 0.2020.1232
+packages:
+  /@peculiar/asn1-schema/2.0.32:
+    dependencies:
+      "@types/asn1js": 2.0.0
+      asn1js: 2.1.1
+      pvtsutils: 1.1.7
+      tslib: 2.2.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-JzGUVxOFN+RKslJrGAxcq4l6tEmmLY1XuALHINVxc8BJsB4bXOdZzTvxbN9dCPk65Vbulno0B6DmImZ7I6SO8w==
+  /@peculiar/json-schema/1.1.12:
+    dependencies:
+      tslib: 2.2.0
+    dev: false
+    engines:
+      node: ">=8.0.0"
+    optional: true
+    resolution:
+      integrity: sha512-coUfuoMeIB7B8/NMekxaDzLhaYmp0HZNPEjYRm9goRou8UZIC3z21s0sL9AWoCw4EG876QyO3kYrc61WNF9B/w==
+  /@peculiar/webcrypto/1.1.7:
+    dependencies:
+      "@peculiar/asn1-schema": 2.0.32
+      "@peculiar/json-schema": 1.1.12
+      pvtsutils: 1.1.7
+      tslib: 2.2.0
+      webcrypto-core: 1.2.0
+    dev: false
+    engines:
+      node: ">=10.12.0"
+    optional: true
+    resolution:
+      integrity: sha512-aCNLYdHZkvGH+T8/YBOY33jrVGVuLIa3bpizeHXqwN+P4ZtixhA+kxEEWM1amZwUY2nY/iuj+5jdZn/zB7EPPQ==
+  /@types/asn1js/2.0.0:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-Jjzp5EqU0hNpADctc/UqhiFbY1y2MqIxBVa2S4dBlbnZHTLPMuggoL5q43X63LpsOIINRDirBjP56DUUKIUWIA==
+  /addressparser/0.3.2:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-WYc/Nej89sc2HBAjkmHXbhU0i7I=
+  /asn1js/2.1.1:
+    dependencies:
+      pvutils: 1.0.17
+    dev: false
+    engines:
+      node: ">=6.0.0"
+    optional: true
+    resolution:
+      integrity: sha512-t9u0dU0rJN4ML+uxgN6VM2Z4H5jWIYm0w8LsZLzMJaQsgL3IJNbxHgmbWDvJAwspyHpDFuzUaUFh4c05UB4+6g==
+  /base64-js/1.5.1:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
+  /buffer/5.7.1:
+    dependencies:
+      base64-js: 1.5.1
+      ieee754: 1.2.1
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==
+  /emailjs-base64/1.1.4:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-4h0xp1jgVTnIQBHxSJWXWanNnmuc5o+k4aHEpcLXSToN8asjB5qbXAexs7+PEsUKcEyBteNYsSvXUndYT2CGGA==
+  /emailjs-mime-codec/2.0.9:
+    dependencies:
+      emailjs-base64: 1.1.4
+      ramda: 0.26.1
+      text-encoding: 0.7.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-7qJo4pFGcKlWh/kCeNjmcgj34YoJWY0ekZXEHYtluWg4MVBnXqGM4CRMtZQkfYwitOhUgaKN5EQktJddi/YIDQ==
+  /emailjs/2.2.0:
+    dependencies:
+      addressparser: 0.3.2
+      emailjs-mime-codec: 2.0.9
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha1-ulsj5KSwpFEPZS6HOxVOlAe2ygM=
+  /gun/0.2020.1232:
+    dependencies:
+      ws: 7.4.5
+    dev: false
+    engines:
+      node: ">=0.8.4"
+    optionalDependencies:
+      "@peculiar/webcrypto": 1.1.7
+      buffer: 5.7.1
+      emailjs: 2.2.0
+      text-encoding: 0.7.0
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    resolution:
+      integrity: sha512-/LAooFgiIwbHt6geaY76uqgrsAS0LmSVvynw7gsaJL/Irn8pZh/Irxoq0iUTcrUR2TzAK81LKLgeM/5pLQZ8Wg==
+  /ieee754/1.2.1:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
+  /pvtsutils/1.1.7:
+    dependencies:
+      tslib: 2.2.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-faOiD/XpB/cIebRzYwzYjCmYgiDd53YEBni+Mt1+8/HlrARHYBpsU2OHOt3EZ1ZhfRNxPL0dH3K/vKaMgNWVGA==
+  /pvutils/1.0.17:
+    dev: false
+    engines:
+      node: ">=6.0.0"
+    optional: true
+    resolution:
+      integrity: sha512-wLHYUQxWaXVQvKnwIDWFVKDJku9XDCvyhhxoq8dc5MFdIlRenyPI9eSfEtcvgHgD7FlvCyGAlWgOzRnZD99GZQ==
+  /ramda/0.26.1:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
+  /text-encoding/0.7.0:
+    deprecated: no longer maintained
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-oJQ3f1hrOnbRLOcwKz0Liq2IcrvDeZRHXhd9RgLrsT+DjWY/nty1Hi7v3dtkaEYbPYe0mUoOfzRrMwfXXwgPUA==
+  /tslib/2.2.0:
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
+  /webcrypto-core/1.2.0:
+    dependencies:
+      "@peculiar/asn1-schema": 2.0.32
+      "@peculiar/json-schema": 1.1.12
+      asn1js: 2.1.1
+      pvtsutils: 1.1.7
+      tslib: 2.2.0
+    dev: false
+    optional: true
+    resolution:
+      integrity: sha512-p76Z/YLuE4CHCRdc49FB/ETaM4bzM3roqWNJeGs+QNY1fOTzKTOVnhmudW1fuO+5EZg6/4LG9NJ6gaAyxTk9XQ==
+  /ws/7.4.5:
+    dev: false
+    engines:
+      node: ">=8.3.0"
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    resolution:
+      integrity: sha512-xzyu3hFvomRfXKH8vOFMU3OguG6oOvhXMo3xsGy3xWExqaM2dxBbVxuD99O7m3ZUFMvvscsZDqxfgMaRr/Nr1g==
+registry: "https://registry.npmjs.org/"
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  gun: "*"
