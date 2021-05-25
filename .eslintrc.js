@@ -3,11 +3,11 @@ module.exports = {
     browser: true,
     commonjs: true,
     es2021: true,
-    node: true,
+    node: true
   },
-  extends: ["standard"],
+  extends: ['prettier-standard'],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 12
   },
-  rules: {},
-};
+  rules: {}
+}
